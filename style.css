@@ -134,9 +134,6 @@ main{
     height: auto;
     margin-top: 70px;
 }
-.card__container{
-    display: flex;
-}
 .section__projects{
     background-color: #15212A;
 }
@@ -152,5 +149,16 @@ main{
 }
 .projects__container h1{
     color: #fff;
-    font-size: 32px;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+.card__container{
+  display: flex;
+  gap: 50px;
+}
+.card{
+    background: url('img/Clonar-node.png') no-repeat center center/cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
 }
