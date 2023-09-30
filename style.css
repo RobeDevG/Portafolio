@@ -132,4 +132,25 @@ main{
 .main__section img{  
     width: 50%;
     height: auto;
+    margin-top: 70px;
+}
+.card__container{
+    display: flex;
+}
+.section__projects{
+    background-color: #15212A;
+}
+.projects__container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.projects__container h1{
+    color: #fff;
+    font-size: 32px;
 }

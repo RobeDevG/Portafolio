@@ -4,11 +4,11 @@
 	 viewBox="0 0 1063.1 259" style="enable-background:new 0 0 1063.1 259;" xml:space="preserve">
 <style type="text/css">
 	.balancingrtl0{fill:none;stroke:#808080;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.balancingrtl1{fill:#FFFFFF;stroke:#EE5586;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.balancingrtl1{fill:#FFFFFF;stroke:#17A2FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.balancingrtl2{fill:none;stroke:#808080;stroke-miterlimit:10;}
-	.balancingrtl3{fill:none;stroke:#EE5586;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.balancingrtl4{fill:none;stroke:#EE5586;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.balancingrtl5{fill:#EE5586;}
+	.balancingrtl3{fill:none;stroke:#17A2FF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.balancingrtl4{fill:none;stroke:#17A2FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.balancingrtl5{fill:#17A2FF;}
 </style>
 <path class="balancingrtl0" d="M898.9,41.6h55.7v37.1h-55.7V41.6z M894.2,87.4h65"/>
 <path id="svg-concept" class="balancingrtl1" d="M907.9,55.2H921 M907.9,64.7h26.3 M1027.2,55.2h13.1 M1027.2,64.7h18.1 M794.9,55.2h13.2
