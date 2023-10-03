@@ -156,9 +156,79 @@ main{
   display: flex;
   gap: 50px;
 }
-.card{
+.card-1{
     background: url('img/Clonar-node.png') no-repeat center center/cover;
+}
+.card-2{
+    background: url('img/Clonar-node.png') no-repeat center center/cover;
+}
+.card-3{
+    background: url('img/Clonar-node.png') no-repeat center center/cover;
+}
+.card{
     height: 400px;
     width: 300px;
     border-radius: 20px;
+    display: flex;
+    align-items: end;
+}
+.card-1 span{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #000000;
+    opacity: 0.4;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+}
+.card-2 span{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #000000;
+    opacity: 0.4;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+}
+.card-3 span{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #000000;
+    opacity: 0.4;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+
+    transition: all 0.3s ease;
+}
+.card-1 span:hover{
+    height: 350px;
+    opacity: 0.95;
+    box-shadow: 0 0 20px #17a2ff;
+    color: #17a2ff;
+    font-size: 30px;
+}
+.card-2 span:hover{
+    height: 350px;
+    opacity: 0.95;
+    box-shadow: 0 0 20px #17a2ff;
+    color: #17a2ff;
+    font-size: 30px;
+}
+.card-3 span:hover{
+    height: 350px;
+    opacity: 0.95;
+    box-shadow: 0 0 20px #17a2ff;
+    color: #17a2ff;
+    font-size: 30px;
 }
