@@ -1,234 +1,301 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'Mooli', sans-serif;
+  font-family: 'Mooli', sans-serif;
 }
-
-body{
-    position: relative;
+html{
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
 }
 
 header {
-    background-color: #15212A;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+  background-color: #15212A;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
 }
 
 .nav {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
-    padding: 8px 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 8px 0;
 
 }
 
 .nav__title {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
 }
 
 .nav__links {
-    text-align: center;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__link {
-    text-decoration: none;
-    margin: 10px 20px;
-    color: #ffffff;
-    position: relative;
+  text-decoration: none;
+  margin: 10px 20px;
+  color: #ffffff;
+  position: relative;
 }
-.nav__link::before{
-    content: "";
-    width: 0%;
-    height: 3px;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    background-color: #fff;
-    transition: all 0.4s ease-in-out;
-}   
-.nav__link:hover::before{
-    width: 100%;
-    background-color: #17a2ff;
+
+.nav__link::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
 }
-.nav__link::after{
-    content: "";
-    width: 0%;
-    height: 3px;
-    position: absolute;
-    top: 25px;
-    right: 0;
-    background-color: #fff;
-    transition: all 0.4s ease-in-out;
-}   
-.nav__link:hover:after{
-    width: 100%;
-   
-    background-color: #17a2ff;
-   
+
+.nav__link:hover::before {
+  width: 100%;
+  background-color: #17a2ff;
+}
+
+.nav__link::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav__link:hover:after {
+  width: 100%;
+
+  background-color: #17a2ff;
+
 
 }
-main{
-    background-color: #101920;
-    width: 100%;
-    min-height: 600px;
+.nav__menu {
+  display: none;
+
 }
-.main__section{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    max-width: 1200px;
-    color: #ffffff;
-    
+.nav__menu span{
+  margin: 5px 30px; 
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  
 }
-.main__section div{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    width: 50%;
-    padding: 20px;
+
+main {
+  background-color: #101920;
+  width: 100%;
+  min-height: 600px;
 }
-.main__section h1{
-    font-size: 3rem;
+
+.main__section {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1200px;
+  color: #ffffff;
+
 }
-.main__section h1 span{
-    color: #17a2ff;
+
+.main__section div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 50%;
+  padding: 20px;
 }
-.main__section div p{
-    margin: 10px 30px 10px 0;
-    font-size: 24px;
+
+.main__section h1 {
+  font-size: 3rem;
 }
-.main__section div a{
-    text-decoration: none;
-    width: fit-content;
-    padding: 20px 50px;
-    color: #fff;
-    letter-spacing: 5px;
-    border: 3px solid;
-    position: relative;
-    transition: all 0.6 ease;
-    margin-top: 20px;
+
+.main__section h1 span {
+  color: #17a2ff;
 }
-.main__section div a:hover{
-    background-color: #001a2b;
-    box-shadow: 0 0 20px #17a2ff;
-    border-color: #17a2ff;
+
+.main__section div p {
+  margin: 10px 30px 10px 0;
+  font-size: 24px;
 }
-.main__section img{  
-    width: 50%;
-    height: auto;
-    margin-top: 70px;
+
+.main__section div a {
+  text-decoration: none;
+  width: fit-content;
+  padding: 20px 50px;
+  color: #fff;
+  letter-spacing: 5px;
+  border: 3px solid;
+  position: relative;
+  transition: all 0.6 ease;
+  margin-top: 20px;
 }
-.section__projects{
-    background-color: #15212A;
+
+.main__section div a:hover {
+  background-color: #001a2b;
+  box-shadow: 0 0 20px #17a2ff;
+  border-color: #17a2ff;
 }
-.projects__container{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+
+.main__section img {
+  width: 50%;
+  height: auto;
+  margin-top: 70px;
 }
-.projects__container h1{
-    color: #fff;
-    font-size: 3rem;
-    margin-top: 10px;
+
+@media(max-width:755px) {
+  .main__section img {
+    display: none;
+  }
+
+  .main__section div {
+    width: 100%
+  }
 }
-.card__container{
+
+.section__projects {
+  background-color: #15212A;
+}
+
+.projects__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects__container h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.card__container {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
+  margin: 10px 30px;
+  justify-content: center;
 }
-.card-1{
-    background: url('img/Clonar-node.png') no-repeat center center/cover;
+
+.card-1 {
+  background: url('img/Clonar-node.png') no-repeat center center/cover;
 }
-.card-2{
-    background: url('img/Clonar-node.png') no-repeat center center/cover;
+
+.card-2 {
+  background: url('img/Clonar-node.png') no-repeat center center/cover;
 }
-.card-3{
-    background: url('img/Clonar-node.png') no-repeat center center/cover;
+
+.card-3 {
+  background: url('img/Clonar-node.png') no-repeat center center/cover;
 }
-.card{
-    height: 400px;
-    width: 300px;
-    border-radius: 20px;
+
+.card {
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: end;
+}
+
+.card-1 span {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-color: #000000;
+  opacity: 0.4;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.card-2 span {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-color: #000000;
+  opacity: 0.4;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.card-3 span {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-color: #000000;
+  opacity: 0.4;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.card-1 span:hover {
+  height: 350px;
+  opacity: 0.95;
+  box-shadow: 0 0 20px #17a2ff;
+  color: #17a2ff;
+  font-size: 30px;
+}
+
+.card-2 span:hover {
+  height: 350px;
+  opacity: 0.95;
+  box-shadow: 0 0 20px #17a2ff;
+  color: #17a2ff;
+  font-size: 30px;
+}
+
+.card-3 span:hover {
+  height: 350px;
+  opacity: 0.95;
+  box-shadow: 0 0 20px #17a2ff;
+  color: #17a2ff;
+  font-size: 30px;
+}
+@media (max-width:655px){
+  .main__section div p{
+    font-size: 20px;
+  }
+  .nav__links{
+    display: none;
+  }
+  .nav__menu{
     display: flex;
-    align-items: end;
-}
-.card-1 span{
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    background-color: #000000;
-    opacity: 0.4;
-    color: #fff;
-    text-align: center;
-    padding-top: 50px;
-    border-radius: 20px;
-
-    transition: all 0.3s ease;
-}
-.card-2 span{
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    background-color: #000000;
-    opacity: 0.4;
-    color: #fff;
-    text-align: center;
-    padding-top: 50px;
-    border-radius: 20px;
-
-    transition: all 0.3s ease;
-}
-.card-3 span{
-    position: absolute;
-    width: 300px;
-    height: 150px;
-    background-color: #000000;
-    opacity: 0.4;
-    color: #fff;
-    text-align: center;
-    padding-top: 50px;
-    border-radius: 20px;
-
-    transition: all 0.3s ease;
-}
-.card-1 span:hover{
-    height: 350px;
-    opacity: 0.95;
-    box-shadow: 0 0 20px #17a2ff;
-    color: #17a2ff;
-    font-size: 30px;
-}
-.card-2 span:hover{
-    height: 350px;
-    opacity: 0.95;
-    box-shadow: 0 0 20px #17a2ff;
-    color: #17a2ff;
-    font-size: 30px;
-}
-.card-3 span:hover{
-    height: 350px;
-    opacity: 0.95;
-    box-shadow: 0 0 20px #17a2ff;
-    color: #17a2ff;
-    font-size: 30px;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
