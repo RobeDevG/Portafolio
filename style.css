@@ -312,6 +312,7 @@ main {
   border-radius: 20px;
   display: flex;
   align-items: end;
+  position: relative;
 }
 
 .card-1 span {
@@ -390,5 +391,35 @@ main {
   }
   .switch{
     display: block;
+  }
+}
+.slaider__container{
+  display: flex;
+  overflow-x: auto;
+   gap: 20px;
+  width: 320px;
+  position: relative;
+  padding: 20px;  
+  scroll-snap-type: x mandatory;
+ }
+.slaider-card{
+  min-width:300px ;
+  min-height: 400px;
+  scroll-snap-align: center;
+ 
+}
+.slaider-card span{
+  width: 100%; 
+}
+
+
+@media(width <= 655px) {
+  .card__container{
+    display: none;
+  }
+}
+@media(width > 655px) {
+  .slaider__container{
+    display: none;
   }
 }
