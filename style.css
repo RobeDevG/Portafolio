@@ -382,6 +382,10 @@ main {
   padding: 20px;
   scroll-snap-type: x mandatory;
 }
+.slaider__container::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
 
 .slaider-card {
   min-width: 300px;
@@ -436,11 +440,14 @@ main {
   border-radius: 10px;
   transition:  0.2s ease-in;
 }
-.skills img:hover{
-  box-shadow: 0 0 20px #17a2ff;
-  transform: skew(3deg, 1deg);
-  transform:translate3d(10px, 10%, 5px);
+@media (hover :hover) {
+  .skills img:hover{
+    box-shadow: 0 0 20px #17a2ff;
+    transform: skew(3deg, 1deg);
+    transform:translate3d(10px, 10%, 5px);
+  }
 }
+
 .skills span{
   color: white;
 }
