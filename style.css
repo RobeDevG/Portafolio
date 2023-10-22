@@ -8,13 +8,15 @@
 html {
   scroll-behavior: smooth;
 }
-html ::-webkit-scrollbar{
+
+html ::-webkit-scrollbar {
   width: 7px;
   background-color: #2437469d;
 }
-html ::-webkit-scrollbar-thumb{
-  background-color:#15212A;
-  border-radius : 2px;
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #15212A;
+  border-radius: 2px;
 }
 
 body {
@@ -99,6 +101,7 @@ header {
 
 
 }
+
 .switch {
   position: relative;
   cursor: pointer;
@@ -151,7 +154,8 @@ header {
   transform: translate(0, 10px);
   transform-origin: 100% 0;
 }
-.nav__menu-links{
+
+.nav__menu-links {
   position: absolute;
   top: 50px;
   right: 0;
@@ -169,27 +173,27 @@ header {
   display: none;
 }
 
-.nav__menu-link{
+.nav__menu-link {
   font-size: 20px;
   text-decoration: none;
   color: whitesmoke;
 }
 
-.hidden{
+.hidden {
   display: flex;
 }
 
-input:checked + div span.line-1 {
+input:checked+div span.line-1 {
   transform: translate(0, 0) rotate(-45deg);
   box-shadow: 0 0 20px #17a2ff;
 }
 
-input:checked +  div span.line-3 {
+input:checked+div span.line-3 {
   transform: translate(-100%, 0) rotate(-45deg);
   box-shadow: 0 0 20px #17a2ff;
 }
 
-input:checked + div span.line-2 {
+input:checked+div span.line-2 {
   transform: translate(-50%, -50%) rotate(45deg);
   box-shadow: 0 0 20px #17a2ff;
 }
@@ -315,7 +319,7 @@ main {
   position: relative;
 }
 
-.card-1 span {
+.card-hover {
   position: absolute;
   width: 300px;
   height: 150px;
@@ -326,59 +330,33 @@ main {
   padding-top: 50px;
   border-radius: 20px;
 
+
   transition: all 0.3s ease;
 }
 
-.card-2 span {
-  position: absolute;
-  width: 300px;
-  height: 150px;
-  background-color: #000000;
-  opacity: 0.4;
+.card-hover:hover {
+  height: 350px;
+  opacity: 0.95;
+  box-shadow: 0 0 20px #17a2ff;
+  font-size: 30px;
+  color: #17a2ff;
+  text-shadow: 0 0 20px #17a2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.text-card {
+  text-shadow: none;
   color: #fff;
-  text-align: center;
-  padding-top: 50px;
-  border-radius: 20px;
-
-  transition: all 0.3s ease;
+  display: none;
+  font-size: 24px;
 }
 
-.card-3 span {
-  position: absolute;
-  width: 300px;
-  height: 150px;
-  background-color: #000000;
-  opacity: 0.4;
-  color: #fff;
-  text-align: center;
-  padding-top: 50px;
-  border-radius: 20px;
-
-  transition: all 0.3s ease;
-}
-
-.card-1 span:hover {
-  height: 350px;
-  opacity: 0.95;
-  box-shadow: 0 0 20px #17a2ff;
-  color: #17a2ff;
-  font-size: 30px;
-}
-
-.card-2 span:hover {
-  height: 350px;
-  opacity: 0.95;
-  box-shadow: 0 0 20px #17a2ff;
-  color: #17a2ff;
-  font-size: 30px;
-}
-
-.card-3 span:hover {
-  height: 350px;
-  opacity: 0.95;
-  box-shadow: 0 0 20px #17a2ff;
-  color: #17a2ff;
-  font-size: 30px;
+.card-hover:hover .text-card {
+  display: block;
+  margin: 0px 20px;
 }
 
 @media (max-width:655px) {
@@ -389,37 +367,90 @@ main {
   .nav__links {
     display: none;
   }
-  .switch{
+
+  .switch {
     display: block;
   }
 }
-.slaider__container{
+
+.slaider__container {
   display: flex;
   overflow-x: auto;
-   gap: 20px;
+  gap: 20px;
   width: 320px;
   position: relative;
-  padding: 20px;  
+  padding: 20px;
   scroll-snap-type: x mandatory;
- }
-.slaider-card{
-  min-width:300px ;
+}
+
+.slaider-card {
+  min-width: 300px;
   min-height: 400px;
   scroll-snap-align: center;
- 
+
 }
-.slaider-card span{
-  width: 100%; 
+
+.slaider-card span {
+  width: 100%;
 }
 
 
-@media(width <= 655px) {
-  .card__container{
+@media(width <=655px) {
+  .card__container {
     display: none;
   }
 }
+
 @media(width > 655px) {
-  .slaider__container{
+  .slaider__container {
     display: none;
   }
+}
+
+.section__skill {
+  background-color: #101920;
+}
+
+.skill__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 10px;
+}
+
+.skill-title {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+.skills img{
+  border: solid black 5px;
+  border-radius: 10px;
+  transition:  0.2s ease-in;
+}
+.skills img:hover{
+  box-shadow: 0 0 20px #17a2ff;
+  transform: skew(3deg, 1deg);
+  transform:translate3d(10px, 10%, 5px);
+}
+.skills span{
+  color: white;
+}
+.svg-skill{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
