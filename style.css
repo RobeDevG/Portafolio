@@ -77,10 +77,11 @@ header {
   background-color: #fff;
   transition: all 0.4s ease-in-out;
 }
-
-.nav__link:hover::before {
-  width: 100%;
-  background-color: #17a2ff;
+@media (hover :hover) {
+  .nav__link:hover::before {
+    width: 100%;
+    background-color: #17a2ff;
+  }
 }
 
 .nav__link::after {
@@ -93,13 +94,12 @@ header {
   background-color: #fff;
   transition: all 0.4s ease-in-out;
 }
-
+@media (hover :hover){
 .nav__link:hover:after {
   width: 100%;
 
   background-color: #17a2ff;
-
-
+}
 }
 
 .switch {
@@ -210,16 +210,15 @@ main {
   display: flex;
   max-width: 1200px;
   color: #ffffff;
-
+  padding: 4rem 1rem;
 }
 
 .main__section div {
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
   width: 50%;
-  padding: 20px;
+  
 }
 
 .main__section h1 {
@@ -256,7 +255,8 @@ main {
 .main__section img {
   width: 50%;
   height: auto;
-  margin-top: 70px;
+  height: fit-content;
+  align-self: center;
 }
 
 @media(max-width:755px) {
@@ -282,12 +282,12 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  padding: 4rem 0;
 }
 
 .projects__container h1 {
   color: #fff;
   font-size: 3rem;
-  margin-top: 10px;
 }
 
 .card__container {
@@ -383,8 +383,7 @@ main {
   scroll-snap-type: x mandatory;
 }
 .slaider__container::-webkit-scrollbar{
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 .slaider-card {
@@ -419,7 +418,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  padding: 10px;
+  padding: 4rem 0;
 }
 
 .skill-title {
