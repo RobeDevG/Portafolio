@@ -2,6 +2,6 @@
 
 Este es mi primer portafolio como programador Front-End.
 
-##Desarrollo
+## Desarrollo
 
 Aun esta en desarrollo.
