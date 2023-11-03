@@ -23,12 +23,13 @@ body {
 }
 
 header {
-  background-color: #15212A;
+  background-color: #15212aa4;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 9999;
+  backdrop-filter: blur(40px);
 }
 
 .nav {
@@ -41,7 +42,6 @@ header {
   color: #ffffff;
   padding: 8px 20px;
   position: relative;
-
 }
 
 .nav__title {
@@ -339,18 +339,19 @@ main {
 
   transition: all 0.3s ease;
 }
-
-.card-hover:hover {
-  height: 350px;
-  opacity: 0.95;
-  box-shadow: 0 0 20px #17a2ff;
-  font-size: 30px;
-  color: #17a2ff;
-  text-shadow: 0 0 20px #17a2ff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
+@media (hover :hover) {
+  .card-hover:hover {
+    height: 350px;
+    opacity: 0.95;
+    box-shadow: 0 0 20px #17a2ff;
+    font-size: 30px;
+    color: #17a2ff;
+    text-shadow: 0 0 20px #17a2ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
 }
 
 .text-card {
@@ -359,12 +360,12 @@ main {
   display: none;
   font-size: 24px;
 }
-
+@media (hover :hover){
 .card-hover:hover .text-card {
   display: block;
   margin: 0px 20px;
 }
-
+}
 @media (max-width:655px) {
   .main__section div p {
     font-size: 20px;
@@ -397,7 +398,6 @@ main {
   min-width: 300px;
   min-height: 400px;
   scroll-snap-align: center;
-
 }
 
 .slaider-card span {
@@ -514,10 +514,12 @@ main {
     border-color: #17a2ff;
   }
 }
-.footer{
+
+.footer {
   background-color: #101920;
 }
-.footer__container{
+
+.footer__container {
   margin-left: auto;
   margin-right: auto;
   display: flex;
